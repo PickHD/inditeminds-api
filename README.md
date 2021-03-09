@@ -8,7 +8,7 @@
   - Make sure to have **Docker** & **docker-compose** installed in your machines
   - You can build the image locally or use from my hosted images in [Docker Hub](https://hub.docker.com/r/pickezdocker/inditeminds-api)
   - Setup your environment in ```docker-compose.yml``` api services
-  > *Recommended to use **MongoDB Atlas***free plan or paid plan*for environment Production **MongoDB** URL*
+  > *Recommended to use **MongoDB Atlas*** free plan or paid plan*for environment Production **MongoDB** URL*
   - Run ``` docker-compose up -d ``` on your terminal
   > *Use -d parameters for running on backgrounds*
   - Docker Running on [http://localhost:8081](http://locahost:8081)
