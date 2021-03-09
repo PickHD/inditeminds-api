@@ -78,6 +78,7 @@ suite("FUNCTIONAL TESTS : Middlewares Test", () => {
     test("Should response 400 code if refreshToken not provided", async () => {
       return chai.request(server)
         .post("/api/v1/auth/token")
+        .set("authorization", "Bearer " + getAccToken)
         .then((res) => {
           assert.equal(res.status, 400)
           assert.equal(res.type, "application/json")
