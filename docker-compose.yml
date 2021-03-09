@@ -27,7 +27,7 @@ services:
         - redis_data:/data/redis
       restart: always
     api1:
-      image: pickezdocker/inditeminds-api:1.0.0
+      image: pickezdocker/inditeminds-api:1.0.0 # default is my images,or you can build locally
       hostname: api1
       container_name: api_primary
       networks:
@@ -46,7 +46,7 @@ services:
       depends_on:
         - redis
     api2:
-      image: pickezdocker/inditeminds-api:1.0.0
+      image: pickezdocker/inditeminds-api:1.0.0 # default is my images,or you can build locally
       hostname: api2
       container_name: api_first_backup
       networks:
@@ -65,7 +65,7 @@ services:
       depends_on:
         - redis
     api3:
-      image: pickezdocker/inditeminds-api:1.0.0
+      image: pickezdocker/inditeminds-api:1.0.0 # default is my images,or you can build locally
       hostname: api3
       container_name: api_second_backup
       networks:
