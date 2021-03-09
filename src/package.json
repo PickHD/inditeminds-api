@@ -1,0 +1,46 @@
+{
+  "name": "inditeminds-api",
+  "version": "1.0.1",
+  "description": "Simply write anyting in your minds.",
+  "main": "index.js",
+  "scripts": {
+    "prod": "pm2-runtime start ecosystem.config.js --env production",
+    "dev": "nodemon index.js",
+    "lint": "eslint --fix .",
+    "test": "export NODE_ENV='test' && mocha './test/**/**/*.test.js' --ui tdd --exit --timeout 15000",
+    "coverage": "nyc --reporter=text-summary npm run test"
+  },
+  "keywords": [],
+  "author": "PickHD <taufikjanuar35@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apicache": "^1.5.3",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "express-rate-limit": "^5.2.5",
+    "express-validator": "^6.9.2",
+    "helmet": "^4.4.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "mongoose-type-email": "^1.1.2",
+    "morgan": "^1.10.0",
+    "pm2": "^4.5.4",
+    "redis": "^3.0.2",
+    "slugify": "^1.4.6",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.3.0",
+    "nodemon": "^2.0.7",
+    "nyc": "^15.1.0"
+  }
+}
