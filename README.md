@@ -33,11 +33,10 @@
       - **Total Tests** : 118 (*All Passed*)
       - **Tests Finished** : (*based on performances*)
   - Run commands ```npm run coverage``` for coverage results of tests
-    - **Results** :
-   =============================== Coverage summary ===============================
-    Statements   : 92.86% ( 585/630 )
-    Branches     : 94.17% ( 113/120 )
-    Functions    : 95.89% ( 70/73 )
-    Lines        : 92.85% ( 584/629 )
-   ================================================================================
+    - **Coverage Results** :
+      - Statements   : 92.86% ( 585/630 )
+      - Branches     : 94.17% ( 113/120 )
+      - Functions    : 95.89% ( 70/73 )
+      - Lines        : 92.85% ( 584/629 )
+   
   
