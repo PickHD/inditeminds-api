@@ -36,11 +36,11 @@ services:
       environment: 
             - PORT=5555
             - NODE_ENV="production"
-            - MONGODB_PROD_URI=mongodb+srv://pick_user35:reverseit40252@cluster0.zecxk.mongodb.net/inditeminds_api_prod?retryWrites=true&w=majority
-            - JWT_ACC_TOKEN_SECRET=ihavenoidea44205
-            - JWT_ACC_TOKEN_VALID_UNTIL=20m
-            - JWT_REF_TOKEN_SECRET=ihaveidea50244
-            - JWT_REF_TOKEN_VALID_UNTIL=1d
+            - MONGODB_PROD_URI=<your_mongo_atlas_cluster_uri>
+            - JWT_ACC_TOKEN_SECRET=<your_jwt_access_token_secret>
+            - JWT_ACC_TOKEN_VALID_UNTIL=<your_jwt_access_token_opts_expiresIn>
+            - JWT_REF_TOKEN_SECRET=<your_jwt_refresh_token_secret>
+            - JWT_REF_TOKEN_VALID_UNTIL=<your_jwt_refresh_token_opts_expiresIn>
             - REDIS_HOST=redis
       restart: always
       depends_on:
@@ -55,11 +55,11 @@ services:
       environment: 
             - PORT=7777
             - NODE_ENV="production"
-            - MONGODB_PROD_URI=mongodb+srv://pick_user35:reverseit40252@cluster0.zecxk.mongodb.net/inditeminds_api_prod?retryWrites=true&w=majority
-            - JWT_ACC_TOKEN_SECRET=ihavenoidea44205
-            - JWT_ACC_TOKEN_VALID_UNTIL=20m
-            - JWT_REF_TOKEN_SECRET=ihaveidea50244
-            - JWT_REF_TOKEN_VALID_UNTIL=1d
+            - MONGODB_PROD_URI=<your_mongo_atlas_cluster_uri>
+            - JWT_ACC_TOKEN_SECRET=<your_jwt_access_token_secret>
+            - JWT_ACC_TOKEN_VALID_UNTIL=<your_jwt_access_token_opts_expiresIn>
+            - JWT_REF_TOKEN_SECRET=<your_jwt_refresh_token_secret>
+            - JWT_REF_TOKEN_VALID_UNTIL=<your_jwt_refresh_token_opts_expiresIn>
             - REDIS_HOST=redis
       restart: always
       depends_on:
@@ -74,11 +74,11 @@ services:
       environment: 
             - PORT=8888
             - NODE_ENV="production"
-            - MONGODB_PROD_URI=mongodb+srv://pick_user35:reverseit40252@cluster0.zecxk.mongodb.net/inditeminds_api_prod?retryWrites=true&w=majority
-            - JWT_ACC_TOKEN_SECRET=ihavenoidea44205
-            - JWT_ACC_TOKEN_VALID_UNTIL=20m
-            - JWT_REF_TOKEN_SECRET=ihaveidea50244
-            - JWT_REF_TOKEN_VALID_UNTIL=1d
+            - MONGODB_PROD_URI=<your_mongo_atlas_cluster_uri>
+            - JWT_ACC_TOKEN_SECRET=<your_jwt_access_token_secret>
+            - JWT_ACC_TOKEN_VALID_UNTIL=<your_jwt_access_token_opts_expiresIn>
+            - JWT_REF_TOKEN_SECRET=<your_jwt_refresh_token_secret>
+            - JWT_REF_TOKEN_VALID_UNTIL=<your_jwt_refresh_token_opts_expiresIn>
             - REDIS_HOST=redis
       restart: always
       depends_on:
