@@ -159,6 +159,7 @@ suite("FUNCTIONAL TESTS : Controllers Test", () => {
             .then(async (res) => {
               return chai.request(server)
                 .post("/api/v1/auth/token")
+                .set("authorization", "Bearer " + res.body.result.accessToken.token)
                 .send({
                   refToken: res.body.result.refreshToken.token
                 })
