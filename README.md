@@ -38,3 +38,6 @@
       - **Branches**     : 94.17% ( 113/120 )
       - **Functions**    : 95.89% ( 70/73 )
       - **Lines**        : 92.85% ( 584/629 )
+
+- **API Base Routes**
+  - Base route on [http://localhost:8080/api/v1](http://localhost:8080/api/v1)
